@@ -50,7 +50,7 @@ function App() {
           >SEN10
           </h1> */}
         </div>
-        <ul className="">
+        <ul className="ps-2">
           {Menus.map((Menu, index) => (
             <li
               key={index}
