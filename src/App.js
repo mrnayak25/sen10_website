@@ -26,22 +26,18 @@ function App() {
   return (
     <div className="flex bg-black" >
       <div
-        className={` ${
-          open ? "" : "w-20 "
-        } bg-dark-purple me-2 relative duration-300`}
+        className={`bg-dark-purple me-2 relative duration-300`}
       >
-        <img
+        {/* <img
           src={control}
           className={`absolute cursor-pointer -right-4 top-9 w-7 border-dark-purple
            border-2 rounded-full  ${!open && "rotate-180"}`}
           onClick={() => setOpen(!open)} alt='img'
-        />
+        /> */}
         <div className="flex gap-x-4 pt-2 items-center">
           <img
             src={logo}
-            className={`cursor-pointer duration-500  ${
-              open && "rotate-[360deg]" 
-            } h-20`}alt='img'
+            className={`cursor-pointer duration-500 h-20`}alt='img'
           />
           {/* <h1
             className={`text-white origin-left font-medium text-xl duration-200 ${
@@ -50,22 +46,27 @@ function App() {
           >SEN10
           </h1> */}
         </div>
-        <ul className="ps-1">
+        <ul className="ps-1 content-center">
+          
           {Menus.map((Menu, index) => (
+            <div className='bg-slate-800 rounded-lg w-3/4 text-center align-center place-content-center'>
             <li
               key={index}
-              className={`flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
+              className={` rounded-md text-center place-content-center cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4 
               ${Menu.gap ? "mt-9" : "mt-2"} ${
                 index === 0 && "bg-light-white"
               } `}
             >
-              <img src={Menu.src} alt='img' />
+              <img src={Menu.src} alt='img' className='text-center place-content-center'/>
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>
             </li>
+            </div>
           ))}
+          
         </ul>
+        
       </div>
       <div className="h-screen flex-1 p-7">
         <h1 className="text-2xl font-semibold ">Home Page</h1>
