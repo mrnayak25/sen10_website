@@ -39,7 +39,7 @@ function App() {
         <div className="flex gap-x-4 pt-2 items-center">
           <img
             src={logo}
-            className={`cursor-pointer duration-500 ps-5 ${
+            className={`cursor-pointer duration-500  ${
               open && "rotate-[360deg]" 
             } h-20`}alt='img'
           />
@@ -50,7 +50,7 @@ function App() {
           >SEN10
           </h1> */}
         </div>
-        <ul className="ps-5">
+        <ul className="ps-1">
           {Menus.map((Menu, index) => (
             <li
               key={index}
