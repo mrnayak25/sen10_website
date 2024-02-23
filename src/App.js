@@ -3,7 +3,6 @@ import './App.css';
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import logo from "./Assets/img/logo.png"
-import control from "./Assets/icons/control.png"
 import homeic from "./Assets/icons/home.png"
 import gamesic from "./Assets/icons/games.png"
 import newsic from "./Assets/icons/news.png"
