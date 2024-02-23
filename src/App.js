@@ -2,49 +2,55 @@
 import './App.css';
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.css';
+import logo from "./Assets/img/logo.png"
+import control from "./Assets/icons/control.png"
+import homeic from "./Assets/icons/home.png"
+import gamesic from "./Assets/icons/games.png"
+import newsic from "./Assets/icons/news.png"
+import esportsic from "./Assets/icons/esports.png"
+import aboutic from "./Assets/icons/about.png"
+import libraryic from './Assets/icons/library.png'
+
 
 function App() {
   const [open, setOpen] = useState(true);
   const Menus = [
-    { title: "Dashboard", src: "Chart_fill" },
-    { title: "Inbox", src: "Chat" },
-    { title: "Accounts", src: "User", gap: true },
-    { title: "Schedule ", src: "Calendar" },
-    { title: "Search", src: "Search" },
-    { title: "Analytics", src: "Chart" },
-    { title: "Files ", src: "Folder", gap: true },
-    { title: "Setting", src: "Setting" },
+    { title: "Home", src: homeic },
+    { title: "Games", src: gamesic },
+    { title: "News", src: newsic},
+    { title: "Esports ", src: esportsic },
+    { title: "About Us", src: aboutic },
+    { title: "Library", src: libraryic },
   ];
 
   return (
-    <div className="flex">
+    <div className="flex bg-black" >
       <div
         className={` ${
-          open ? "w-72" : "w-20 "
-        } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
+          open ? "" : "w-20 "
+        } bg-dark-purple me-2 relative duration-300`}
       >
         <img
-          src="./src/assets/control.png"
-          className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
+          src={control}
+          className={`absolute cursor-pointer -right-4 top-9 w-7 border-dark-purple
            border-2 rounded-full  ${!open && "rotate-180"}`}
           onClick={() => setOpen(!open)} alt='img'
         />
-        <div className="flex gap-x-4 items-center">
+        <div className="flex gap-x-4 pt-2 items-center">
           <img
-            src="./src/assets/logo.png"
+            src={logo}
             className={`cursor-pointer duration-500 ${
               open && "rotate-[360deg]" 
-            }`}alt='img'
+            } h-20`}alt='img'
           />
-          <h1
+          {/* <h1
             className={`text-white origin-left font-medium text-xl duration-200 ${
               !open && "scale-0"
             }`}
-          >
-            Designer
-          </h1>
+          >SEN10
+          </h1> */}
         </div>
-        <ul className="pt-6">
+        <ul className="">
           {Menus.map((Menu, index) => (
             <li
               key={index}
@@ -53,7 +59,7 @@ function App() {
                 index === 0 && "bg-light-white"
               } `}
             >
-              <img src={`./src/assets/${Menu.src}.png`} alt='img' />
+              <img src={Menu.src} alt='img' />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
                 {Menu.title}
               </span>
