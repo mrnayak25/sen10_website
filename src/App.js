@@ -9,6 +9,7 @@ import newsic from "./Assets/icons/news.png"
 import esportsic from "./Assets/icons/esports.png"
 import aboutic from "./Assets/icons/about.png"
 import libraryic from './Assets/icons/library.png'
+import MainContainer from './components/MainContainer';
 
 
 function App() {
@@ -68,7 +69,8 @@ function App() {
         
       </div>
       <div className="h-screen flex-1 p-7">
-        <h1 className="text-2xl font-semibold ">Home Page</h1>
+        <h1>Home</h1>
+        <MainContainer/>
       </div>
     </div>
   );
