@@ -19,7 +19,7 @@ function SliderComp() {
   };
 
   return (
-    <div className="relative w-full" id="default-carousel">
+    <div className="relative w-full my-4" id="default-carousel">
       {/* Carousel wrapper */}
       <div className="relative h-56 md:h-96 overflow-hidden rounded-lg">
         {images.map((image, index) => (
@@ -43,13 +43,12 @@ function SliderComp() {
         className="absolute top-1/2 left-4 transform -translate-y-1/2 z-10 px-3 py-2 bg-gray-800 bg-opacity-50 rounded-full text-white focus:outline-none"
         onClick={goToPreviousSlide}
       >
-        Prev
+        {"<"}
       </button>
       <button
         className="absolute top-1/2 right-4 transform -translate-y-1/2 z-10 px-3 py-2 bg-gray-800 bg-opacity-50 rounded-full text-white focus:outline-none"
         onClick={goToNextSlide}
-      >
-        Next
+      > {">"}
       </button>
       {/* Slider indicators */}
       <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
