@@ -1,10 +1,10 @@
 import React from 'react'
-import SliderComponent from './SliderComponent'
+import SliderComp from './SliderComp'
 
 function MainContainer() {
   return (
     <div>
-      <SliderComponent/>
+        <SliderComp/>
     </div>
   )
 }
