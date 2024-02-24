@@ -1,14 +1,3 @@
-
-import './App.css';
-import { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.css';
-import logo from "./Assets/img/logo.png"
-import homeic from "./Assets/icons/home.png"
-import gamesic from "./Assets/icons/games.png"
-import newsic from "./Assets/icons/news.png"
-import esportsic from "./Assets/icons/esports.png"
-import aboutic from "./Assets/icons/about.png"
-import libraryic from './Assets/icons/library.png'
 import MainContainer from './components/MainContainer';
 
 import React, { useState } from "react";
