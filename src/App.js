@@ -63,11 +63,9 @@ function App() {
 
       </div>
       <div className="h-screen flex-1 p-7">
-        <h1>Home</h1>
-        <MainContainer/>
-      <div className="h-screen flex-1  ">
-        <main className="flex-1 p-7">
-          <header className="container mx-auto px-4 py-8 flex justify-between items-center">
+      <div className="flex-1  ">
+        <main className="flex-1 ">
+          <header className="container mx-auto  flex justify-between items-center">
             <div className="flex items-center bg-[#222222] rounded-sm flex-center w-64 h-10 p-1">
               <img src={search} alt="0" className="w-6 mr-4" />
               <p className="text-3x font-bold text-white text-center">Search</p>
@@ -85,10 +83,9 @@ function App() {
             </div>
           </header>
         </main>
-
       </div>
-
-
+      
+      <MainContainer/>
     </div>
     </div>
   );
