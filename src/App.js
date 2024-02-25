@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="flex bg-black justify-center items-center h-screen overflow-hidden">
-      <div className={`bg-[#222222] me-2 relative duration-300 p-2 items-center rounded-lg grid justify-items-center w-17 `}>
+      <div className={`bg-[#222222] ms-4 relative duration-300 p-2 items-center rounded-lg grid justify-items-center w-17 `}>
         {/* <img
           src={control}
           className={`absolute cursor-pointer -right-4 top-9 w-7 border-dark-purple
@@ -62,9 +62,9 @@ function App() {
         </div>
       </div>
       <div className="h-screen flex-1 px-6 py-2">
-      <div className="flex justify-between bg-[#222222] rounded-lg">
+      <div className="flex justify-between rounded-lg">
        <div className='flex m-3'>
-       <input type="search" id="default-search" class="block ps-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#302f2f] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
+       <input type="search" id="default-search" class="block p-2 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-[#302f2f] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search" required />
        <button type="submit" class="p-2.5 ms-2 text-sm font-medium text-white bg-[#302f2f] rounded-lg border hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#302f2f] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
@@ -75,10 +75,10 @@ function App() {
      <div className='flex text-center justify-center me-2'>
       <div className='flex text-center mx-3'>
 <p className='text-white text-center m-auto'>WishList</p>
-</div>
+</div> 
 <div className='bg-[#4d4d4d] flex rounded-lg my-2 mx-3'>
   <img src={cart} alt='...' className='h-10 m-auto p-1'/>
-  <div className='bg-[#fff] rounded-lg flex'>
+  <div className='bg-[#fff] rounded-full flex my-2 mx-1'>
     <h4 className='m-auto text-lg mx-2'>5</h4>
   </div>
 </div>
